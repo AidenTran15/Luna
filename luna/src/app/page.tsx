@@ -37,7 +37,7 @@ export default function Home() {
         <>
           <div className="heart mb-8">❤️</div>
           <Envelope />
-          <div className="flex gap-6 mt-8">
+          <div className="flex mt-8" style={{ gap: '6rem' }}>
             <button
               className="button-yes"
               onClick={handleYesClick}
