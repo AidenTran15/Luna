@@ -27,9 +27,9 @@ const Envelope = () => {
         <div className={styles.modal} onClick={e => e.stopPropagation()}>
           <button className={styles.closeButton} onClick={handleCloseModal}>&times;</button>
           <div className={styles.modalContent}>
-            <h2>Uyên ơi, anh thương em</h2>
+            <h2>Uyên ơi, làm người yêu anh nhé?</h2>
             <p>
-              Em đồng ý làm bạn gái anh nha. Anh không giỏi văn vở, không giỏi viết những lời đường mật nhưng anh khẳng định sẽ chăm lo cho em hết sức anh có thể.<br/>
+              Anh thương em. Anh không giỏi văn vở, không giỏi viết những lời đường mật nhưng anh khẳng định sẽ chăm lo cho em hết sức anh có thể.<br/>
               Anh cảm nhận được những tổn thương của em trong quá khứ. Điều đó làm anh thương em nhiều hơn, anh muốn đồng hành che chở, bảo vệ em hết quảng đời còn lại.  Anh luôn cố gắng phần đấu cho tương lai 2 đứa.<br/>
               Thật sự, trước khi có em, anh cảm thấy rất cô đơn trên con đường anh đi. Anh muốn phần đường còn đi cùng em. Anh cũng muốn là 1 người đồng hành tin cậy của em, là nơi em có thể chia những niềm vui, nỗi buồn và vượt qua những khó khăn cùng nhau.<br/>
               Anh thương em nhiều lắm. Anh thật sự rất nghiêm túc với em. Cho anh cơ hội nhé.
