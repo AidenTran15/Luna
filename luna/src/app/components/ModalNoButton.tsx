@@ -23,7 +23,7 @@ const ModalNoButton: React.FC<ModalNoButtonProps> = ({ open, onClose }) => {
         </button>
         <div className={styles.title}>THÔNG BÁO</div>
         <div className={styles.message}>
-          Hiện tại nút này không khả dụng, xin vui lòng dùng nút &quot;Tôi đồng ý&quot;
+          Hiện tại nút này đang bị lỗi, xin vui lòng dùng nút &quot;Em đồng ý&quot;
         </div>
         <button
           className={styles.actionButton}
