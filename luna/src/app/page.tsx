@@ -43,6 +43,7 @@ export default function Home() {
 
   const handleClosePopup = () => {
     setShowPopup(false);
+    setNoCount(0);
   };
 
   // Debug log for render
