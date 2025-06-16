@@ -93,6 +93,8 @@ export default function Home() {
             type="button"
             style={thinkingBtnPos.moving ? { position: 'absolute', top: thinkingBtnPos.top, left: thinkingBtnPos.left, zIndex: 20 } : {}}
             onMouseEnter={handleThinkingHover}
+            onTouchStart={handleThinkingHover}
+            onClick={handleThinkingHover}
             tabIndex={-1}
           >
             Em đang suy nghĩ 🤔
