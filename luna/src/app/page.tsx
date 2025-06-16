@@ -8,6 +8,7 @@ export default function Home() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [thinkingBtnPos, setThinkingBtnPos] = useState({ top: 0, left: 0, moving: false });
 
   const noButtonText = [
     "Không",
@@ -46,6 +47,19 @@ export default function Home() {
     setNoCount(0);
   };
 
+  const handleThinkingHover = () => {
+    // Get viewport size
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    // Button size estimate
+    const btnWidth = 200;
+    const btnHeight = 60;
+    // Random position within viewport, with some margin
+    const top = Math.max(0, Math.random() * (vh - btnHeight - 40));
+    const left = Math.max(0, Math.random() * (vw - btnWidth - 40));
+    setThinkingBtnPos({ top, left, moving: true });
+  };
+
   // Debug log for render
   console.log('Render - showPopup:', showPopup);
   console.log('Render - noCount:', noCount);
@@ -74,6 +88,15 @@ export default function Home() {
               {noButtonText[noCount]} 💔
             </button>
           </div>
+          <button
+            className="button-thinking"
+            type="button"
+            style={thinkingBtnPos.moving ? { position: 'absolute', top: thinkingBtnPos.top, left: thinkingBtnPos.left, zIndex: 20 } : {}}
+            onMouseEnter={handleThinkingHover}
+            tabIndex={-1}
+          >
+            Em đang suy nghĩ 🤔
+          </button>
         </>
       ) : (
         <div className="flex flex-col items-center gap-4">

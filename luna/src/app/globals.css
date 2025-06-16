@@ -107,3 +107,29 @@ body {
 .button-no:active {
   transform: scale(0.9);
 }
+
+.button-thinking {
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(45deg, #bdbdfc, #e0e0ff);
+  color: #444;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(107, 107, 255, 0.18);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #bdbdfc;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-thinking:hover,
+.button-thinking:focus {
+  background: linear-gradient(45deg, #e0e0ff, #bdbdfc);
+  color: #222;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(107, 107, 255, 0.22);
+}
