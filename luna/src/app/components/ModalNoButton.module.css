@@ -1,0 +1,84 @@
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalCard {
+    position: relative;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 95vw;
+    padding: 3rem 2.2rem 2.5rem 2.2rem;
+    text-align: center;
+    border: 1.5px solid #f9c2d8;
+    z-index: 1010;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.accentBar {
+    width: 60px;
+    height: 6px;
+    border-radius: 8px;
+    margin: 0 auto 1.5rem auto;
+    background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.closeButton {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.7rem;
+    font-size: 2.1rem;
+    color: #e5e7eb;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #d1d5db;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: #ec4899;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ec4899;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+}
+
+.actionButton {
+    width: 100%;
+    padding: 0.75rem 0;
+    background: linear-gradient(90deg, #f472b6 0%, #ec4899 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 0 2px 8px rgba(236, 72, 153, 0.15);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.actionButton:hover {
+    background: linear-gradient(90deg, #ec4899 0%, #f472b6 100%);
+    transform: scale(1.04);
+}

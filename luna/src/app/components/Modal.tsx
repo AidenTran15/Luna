@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 interface ModalProps {
   open: boolean;
@@ -9,7 +10,8 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ open, onClose, title, children }) => {
   if (!open) return null;
-  return (
+
+  return ReactDOM.createPortal(
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50">
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full text-center relative">
         <button
@@ -23,7 +25,8 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, children }) => {
           {children}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
